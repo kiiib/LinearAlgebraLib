@@ -1,3 +1,5 @@
+from math import sqrt
+
 class Vector(object):
     def __init__(self, coordinates):
         try:
@@ -11,6 +13,8 @@ class Vector(object):
 
         except TypeError:
             raise ValueError('The coordinates must be an iterable')
+
+    def magnitude(self):
 
     def plus(self, v):
         new_coordinates = [x+y for x,y in zip(self.coordinates, v.coordinates)]
