@@ -32,6 +32,9 @@ class Vector(object):
         new_coordinates = [c*x for x in self.coordinates]
         return Vector(new_coordinates)
 
+    def test:
+        return print("test")
+
     def __str__(self):
         return 'Vector: {}'.format(self.coordinates)
 
